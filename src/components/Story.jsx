@@ -3,8 +3,9 @@ import { useRef } from "react";
 
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
+import AnimatedText from "./AnimatedText";
 
-const FloatingImage = () => {
+const Story = () => {
   const frameRef = useRef(null);
 
   const handleMouseMove = (e) => {
@@ -49,12 +50,12 @@ const FloatingImage = () => {
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          the multiversal ip world
+          the Nerdversal world
         </p>
 
         <div className="relative size-full">
           <AnimatedTitle
-            title="the st<b>o</b>ry of <br /> a hidden real<b>m</b>"
+            title="Rede<b>f</b>ining Afr<b>i</b>can <br/> Storytelling"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 
@@ -67,7 +68,7 @@ const FloatingImage = () => {
                   onMouseLeave={handleMouseLeave}
                   onMouseUp={handleMouseLeave}
                   onMouseEnter={handleMouseLeave}
-                  src="/img/entrance.webp"
+                  src="/img/comic4.jpg"
                   alt="entrance.webp"
                   className="object-contain"
                 />
@@ -103,18 +104,66 @@ const FloatingImage = () => {
           </div>
         </div>
 
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
+        <div className="-mt-80 flex w-full justify-center md:-mt-80 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms converge, lies Zentry and the boundless pillar.
-              Discover its secrets and shape your fate amidst infinite
-              opportunities.
+              From Creators to Devoted Readers. There&apos;s a story for
+              Everyone
             </p>
 
             <Button
-              id="realm-btn"
+              id="discover-btn"
               title="discover prologue"
-              containerClass="mt-5"
+              containerClass="mt-5 !bg-blue-600 !text-white"
+            />
+            <Button
+              id="nerdowrk-btn"
+              title="go to Nerdwork+"
+              containerClass="mt-5 !bg-blue-600 !text-white"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="">
+        <div className="mx-auto -mt-10 grid max-w-7xl grid-cols-1 items-center justify-center gap-4 px-3 pb-20 md:grid-cols-2">
+          <div className="flex flex-col items-center ">
+            <AnimatedTitle
+              title="1"
+              containerClass="!text-4xl !sm:text-5xl font-bold mb-3 sm:mb-4"
+            />
+            <AnimatedText
+              text="Discover African Stories Immerse yourself in authentic African narratives, from folklore to futuristic adventures."
+              containerClass="  md:text-left !text-xs !sm:text-sm md:text-lg"
+            />
+          </div>
+          <div className="flex flex-col items-center ">
+            <AnimatedTitle
+              title="2"
+              containerClass="!text-4xl !sm:text-5xl font-bold mb-3 sm:mb-4"
+            />
+            <AnimatedText
+              text="Better Reading Experience Seamless, immersive, and tailored for your comfort, enjoy comics like never before."
+              containerClass="text-center md:text-left !text-xs !sm:text-sm md:text-lg"
+            />
+          </div>
+          <div className="flex flex-col items-center ">
+            <AnimatedTitle
+              title="3"
+              containerClass="!text-4xl !sm:text-5xl font-bold mb-3 sm:mb-4"
+            />
+            <AnimatedText
+              text="Excellent Creator Management Empowering African creators with the tools to bring stories to life."
+              containerClass="text-center md:text-left !text-xs !sm:text-sm md:text-lg"
+            />
+          </div>
+          <div className="flex flex-col items-center ">
+            <AnimatedTitle
+              title="4"
+              containerClass="!text-4xl !sm:text-5xl font-bold mb-3 sm:mb-4"
+            />
+            <AnimatedText
+              text="African Focused Voice Bringing African culture, creativity, and perspectives to the world."
+              containerClass="text-center md:text-left !text-xs !sm:text-sm md:text-lg"
             />
           </div>
         </div>
@@ -123,4 +172,4 @@ const FloatingImage = () => {
   );
 };
 
-export default FloatingImage;
+export default Story;

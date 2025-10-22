@@ -64,8 +64,8 @@ const Hero = () => {
 
   useGSAP(() => {
     gsap.set("#video-frame", {
-      clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
-      borderRadius: "0% 0% 40% 10%",
+      clipPath: "polygon(29% 0, 72% 0, 100% 100%, 0 100%)",
+      borderRadius: "0% 0% 50% 50%",
     });
     gsap.from("#video-frame", {
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -139,33 +139,36 @@ const Hero = () => {
             onLoadedData={handleVideoLoad}
           />
         </div>
+        <div className="absolute inset-0 z-30  bg-gradient-to-t from-black via-black/70 to-transparent" />
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          G<b>A</b>MING
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-700">
+          ner<b>d</b>verse
         </h1>
 
-        <div className="absolute left-0 top-0 z-40 size-full">
-          <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
-              redefi<b>n</b>e
+        <div className="absolute left-0 top-20 z-40 size-full ">
+          <div className="mt-24 flex flex-col items-center justify-center px-5 sm:px-10">
+            <h1 className="special-font hero-heading text-blue-50">
+              Ner<b>d</b>work
             </h1>
 
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+            <p className="mb-5 max-w-2xl text-center font-robert-regular text-lg text-neutral-300 md:text-xl">
+              Where passion meets community <br />
+              From comics to conventions, find your people and immerse yourself
+              in everything you love.
             </p>
 
             <Button
-              id="watch-trailer"
-              title="Watch trailer"
-              leftIcon={<TiLocationArrow />}
+              id="Join-us"
+              title="Join Us"
+              rightIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
             />
           </div>
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        G<b>A</b>MING
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-blue-75">
+        Ner<b>D</b>verse
       </h1>
     </div>
   );

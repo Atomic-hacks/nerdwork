@@ -12,18 +12,18 @@ export default {
       },
       colors: {
         blue: {
-          50: "#DFDFF0",
-          75: "#dfdff2",
-          100: "#F0F2FA",
-          200: "#010101",
-          300: "#4FB7DD",
+          50: "#b3d4ff",  // light vibrant blue
+          75: "#80bfff",  // medium light
+          100: "#3399ff",  // bright strong blue
+          200: "#0073e6",  // darker vibrant blue
+          300: "#004c99",  // deep blue for accents
         },
         violet: {
-          300: "#5724ff",
+          300: "#3f2bff", // bluer violet (cooler tone)
         },
         yellow: {
-          100: "#8e983f",
-          300: "#edff66",
+          100: "#a8ff3f", // lemon green (vibrant)
+          300: "#baff00", // stronger lemon-lime tone
         },
       },
     },
